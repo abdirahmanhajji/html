@@ -1,0 +1,146 @@
+Method/functions 
+-refers to a set of instruction that perfom a specific task and return results.
+NB: A method executes only when it is called.
+Examples of defined method in java
+-nextlnt();
+-nextfloat();
+-nextDouble();
+
+All these are already functions that were predefined within the Scanner class in java.
+we can use them any time and as many times as we went.
+Using a method is what we refer to as "calling method" in programming.
+
+
+why methods
+
+-to enhance code reuse 
+-to enhance code sharing
+
+we can also create our own methods in ajava
+
+example a given the calculation below that needs to be executed many times, we can turn it into a method so that we defined once but use it many times.
+
+CW=(test1+test2)/2
+fm=cw+examark;
+
+SYNTAX of creating method
+access-specifier return-type method name(list of formal paramaters)
+{
+//method body
+}
+
+The accesss-specific/access-modifier-helps to define the scope of access of the method
+return-type is the datatype of the value that will be returned or output by the method after calculation 
+method name is simply a name given to the method. you can give it any name of your choice as long as you follow the rules of variablenames.
+method body contains all the calculations or logic that must be performed by the method
+
+
+TYPES METHODS
+1.return-value method-method defined with a return keyword. this means that we except the method to return a given answer the line or code that called the method.
+
+2.Void method-method defined without a return keyword. this means that the method outputs the answer by its self with out returning it to the calling line ir code
+
+CW=(test1+test2)/2
+fm=cw+examark;
+
+
+EXamples of areturn-value method
+
+public static int khaled(int test1,int test2, float exammark)
+{
+int cw,fm;
+CW=(test1+test2)/2;
+fm=cw+examark;
+return fm;
+}
+
+SYNTAX of creating avoid method
+access-specifier void  method name(list of formal paramaters)
+{
+//method body
+}
+
+Calling is a method-means providing actual to the method
+syntax of calling a method
+methodname(list of actual parameters)
+
+Example of calling a return-value method
+int h=khaled(20,18,40);
+System.out.println("the finalmark is "+h);
+
+
+int y=khaled(16,14,60);
+System.out.println("the finalmark is "+t);
+
+int y=khaled(20,20,30);
+System.out.println("the finalmark is "+y);
+
+
+
+Example of a void method
+public static khaled(int test1,int test2, float exammark)
+{
+int cw,fm;
+CW=(test1+test2)/2;
+fm=cw+examark;
+System.out.println("the final mark is "+fm);
+}
+Example calling a void method
+khaled(16,14,60);
+
+khaled(20,10,30);
+
+khaled(20,19,60);
+
+
+Where do we define methods in a program
+1.before the main method
+2.After the main method
+
+
+Syntax 
+public class testmethod
+{
+//you can define the method here
+
+
+public static void main (String[]args)
+{
+//we call the method here
+{
+
+//you can define the method here
+}
+
+
+
+Example of class involving a return-value method
+
+public static int khaled(int test1,int test2, float exammark)
+{
+int cw,fm;
+CW=(test1+test2)/2;
+fm=cw+examark;
+return fm;
+}
+public static void main (String[]args)
+
+
+int y=khaled(16,14,60);
+System.out.println("the finalmark is "+t);
+
+int y=khaled(16,14,60);
+System.out.println("the finalmark is "+t);
+
+}
+}
+
+
+
+
+
+TYPES OF PARAMETERS
+
+1.formal parameters; these refers to the replaceholders for the values to be used by agiven method 
+2. given method
+3. actual parameters.These refer to the actual values passed
